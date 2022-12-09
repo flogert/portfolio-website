@@ -55,7 +55,7 @@ export default function Home() {
                   />
                 </div>
                 <br></br>
-                <h1 className=''>I'm Flogert and I build web applications.<br></br> I also enjoy painting happy little trees and writing poems.</h1>
+                <h1 className=''>My name is Flogert and I build web applications.<br></br> I also enjoy painting happy little trees and writing poems.</h1>
               </div>
               <div className="rounded-2xl flex flex-row items-center justify-center">
                   <Link href='/'>
