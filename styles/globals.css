@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-gray-50 text-gray-900 dark:bg-slate-800 dark:text-gray-100;
+        @apply min-h-screen;
+    }
+
+    ::selection {
+        @apply text-white bg-teal-700;
+    }
+    html {
+        @apply scroll-smooth;
+    }
+}
+
+* {
+    font-family: sans-serif;
+    font-size: 20px;
+}
