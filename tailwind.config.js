@@ -7,10 +7,7 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
-      backgroundImage: {
-        'trees': "url('/trees.png')",
-        'trees1': "url('/trees1.png')",
-      }
+      
     }
   },
   plugins: [
