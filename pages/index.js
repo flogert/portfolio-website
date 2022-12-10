@@ -104,7 +104,7 @@ export default function Home() {
                 <h1 class="text-4xl font-extrabold xs:col-span-2 xs:grid xs:gap-4 xs:grid-cols-2 md:col-span-3 md:text-5xl md:grid-cols-3 lg:text-6xl">
                   <span class="md:col-span-2">Projects</span>
                 </h1>
-                <p class="xs:row-start-2 xs:col-start-2 xs:self-center md:col-start-1 md:col-span-2 md:pr-12 md:text-lg">I paint mostly landscapes, using acrylic paints.</p>
+                <p class="xs:row-start-2 xs:col-start-2 xs:self-center md:col-start-1 md:col-span-2 md:pr-12 md:text-lg">Here are some of the web apps/challenges I have worked on.</p>
                 <Link href='/'>
                   <div class="h-40 xs:h-auto xs:square rounded-lg">
                     <Image className="rounded-2xl" src="/projects/multi-step-form.PNG" fixed width={250} height={250} />
@@ -112,37 +112,37 @@ export default function Home() {
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-auto xs:square rounded-lg">
-                    <Image className="rounded-2xl" src="/projects/kojaba-dark.PNG" layout="fixed" width={250} height={250} />
+                    <Image className="rounded-2xl" src="/projects/kojaba-dark.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-auto xs:square rounded-lg">
-                    <Image className="rounded-2xl" src="/projects/kojaba-light.PNG" layout="fixed" width={250} height={250} />
+                    <Image className="rounded-2xl" src="/projects/kojaba-light.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-auto xs:square rounded-lg md:col-start-2">
-                    <Image className="rounded-2xl" src="/projects/product-preview.PNG" layout="fixed" width={250} height={250} />
+                    <Image className="rounded-2xl" src="/projects/product-preview.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-auto xs:square rounded-lg">
-                    <Image className="rounded-2xl" src="/projects/cookie-modal.PNG" layout="fixed" width={250} height={250} />
+                    <Image className="rounded-2xl" src="/projects/cookie-modal.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-auto xs:square rounded-lg">
-                    <Image className="rounded-2xl" src="/projects/meditation-time.PNG" layout="fixed" width={250} height={450} />
+                    <Image className="rounded-2xl" src="/projects/meditation-time.PNG" fixed width={250} height={450} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-auto xs:square rounded-lg">
-                    <Image className="rounded-2xl" src="/projects/tribe-salon.PNG" layout="fixed" width={250} height={250} />
+                    <Image className="rounded-2xl" src="/projects/tribe-salon.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-auto xs:square rounded-lg">
-                    <Image className="rounded-2xl" src="/projects/multi-step-form.PNG" layout="fixed" width={250} height={250} />
+                    <Image className="rounded-2xl" src="/projects/multi-step-form.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <p class="mr-80 self-center md:text-lg md:col-span-2 md:text-center md:px-4">Store</p>
@@ -168,42 +168,42 @@ export default function Home() {
                 <p class="xs:row-start-2 xs:col-start-2 xs:self-center md:col-start-1 md:col-span-2 md:pr-12 md:text-lg">I paint mostly landscapes, using acrylic paints.</p>
                 <Link href='/'>
                   <div class="h-40 xs:h-auto xs:square rounded-lg">
-                    <Image className="rounded-2xl" src="/paintings/by-the-bridge.jpg" layout="fixed" width={250} height={250} />
+                    <Image className="rounded-2xl" src="/paintings/by-the-bridge.jpg" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-auto xs:square rounded-lg">
-                    <Image className="rounded-2xl" src="/paintings/cabin.jpg" layout="fixed" width={250} height={250} />
+                    <Image className="rounded-2xl" src="/paintings/cabin.jpg" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-auto xs:square rounded-lg">
-                    <Image className="rounded-2xl" src="/paintings/viego.jpg" layout="fixed" width={250} height={250} />
+                    <Image className="rounded-2xl" src="/paintings/viego.jpg" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-auto xs:square rounded-lg md:col-start-2">
-                    <Image className="rounded-2xl" src="/paintings/sunset.jpeg" layout="fixed" width={250} height={250} />
+                    <Image className="rounded-2xl" src="/paintings/sunset.jpeg" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-auto xs:square rounded-lg">
-                    <Image className="rounded-2xl" src="/paintings/warwick.jpg" layout="fixed" width={250} height={250} />
+                    <Image className="rounded-2xl" src="/paintings/warwick.jpg" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-auto xs:square rounded-lg">
-                    <Image className="rounded-2xl" src="/paintings/charlie.jpg" layout="fixed" width={250} height={450} />
+                    <Image className="rounded-2xl" src="/paintings/charlie.jpg" fixed width={250} height={450} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-auto xs:square rounded-lg">
-                    <Image className="rounded-2xl" src="/paintings/horizon.jpg" layout="fixed" width={250} height={250} />
+                    <Image className="rounded-2xl" src="/paintings/horizon.jpg" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-auto xs:square rounded-lg">
-                    <Image className="rounded-2xl" src="/paintings/hogwarts.jpg" layout="fixed" width={250} height={250} />
+                    <Image className="rounded-2xl" src="/paintings/hogwarts.jpg" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <p class="mr-80 self-center md:text-lg md:col-span-2 md:text-center md:px-4">Store</p>
