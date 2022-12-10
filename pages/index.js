@@ -107,42 +107,42 @@ export default function Home() {
                 <p class="xs:row-start-2 xs:col-start-2 xs:self-center md:col-start-1 md:col-span-2 md:pr-12 md:text-lg">Here are some of the web apps/challenges I have worked on.</p>
                 <Link href='/'>
                   <div class="h-40 xs:h-auto xs:square rounded-lg">
-                    <Image className="rounded-2xl" src="/projects/multi-step-form.PNG" fixed width={250} height={250} />
+                    <Image className="rounded-2xl hover:scale-150" src="/projects/multi-step-form.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-auto xs:square rounded-lg">
-                    <Image className="rounded-2xl" src="/projects/kojaba-dark.PNG" fixed width={250} height={250} />
+                    <Image className="rounded-2xl hover:scale-150" src="/projects/kojaba-dark.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-auto xs:square rounded-lg">
-                    <Image className="rounded-2xl" src="/projects/kojaba-light.PNG" fixed width={250} height={250} />
+                    <Image className="rounded-2xl hover:scale-150" src="/projects/kojaba-light.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-auto xs:square rounded-lg md:col-start-2">
-                    <Image className="rounded-2xl" src="/projects/product-preview.PNG" fixed width={250} height={250} />
+                    <Image className="rounded-2xl hover:scale-150" src="/projects/product-preview.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-auto xs:square rounded-lg">
-                    <Image className="rounded-2xl" src="/projects/cookie-modal.PNG" fixed width={250} height={250} />
+                    <Image className="rounded-2xl hover:scale-150" src="/projects/cookie-modal.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-auto xs:square rounded-lg">
-                    <Image className="rounded-2xl" src="/projects/meditation-time.PNG" fixed width={250} height={450} />
+                    <Image className="rounded-2xl hover:scale-150" src="/projects/meditation-time.PNG" fixed width={250} height={450} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-auto xs:square rounded-lg">
-                    <Image className="rounded-2xl" src="/projects/tribe-salon.PNG" fixed width={250} height={250} />
+                    <Image className="rounded-2xl hover:scale-150" src="/projects/tribe-salon.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-auto xs:square rounded-lg">
-                    <Image className="rounded-2xl" src="/projects/multi-step-form.PNG" fixed width={250} height={250} />
+                    <Image className="rounded-2xl hover:scale-150" src="/projects/multi-step-form.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <p class="mr-80 self-center md:text-lg md:col-span-2 md:text-center md:px-4">Store</p>
