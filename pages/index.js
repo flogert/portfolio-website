@@ -22,6 +22,7 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"></link>
+        <link rel="stylesheet" href="./styles/globals.css"></link>
       </Head>
       <main className="w-full h-screen bg-gray-100 dark:bg-slate-700">
         <Navbar />
