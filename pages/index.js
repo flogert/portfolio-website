@@ -24,34 +24,33 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"></link>
         <link rel="stylesheet" href="./styles/globals.css"></link>
       </Head>
-      <main className="w-full h-screen bg-gray-100 dark:bg-slate-700">
+      <main className="w-full h-screen bg-gray-100 dark:bg-slate-900">
         <Navbar />
-        <div className='flex flex-col items-center gap-20'>
+        <div className='flex flex-col items-center gap-20 dark:bg-slate-900'>
           <div className='flex flex-col items-center mt-40 mr-10'>
             <div className='flex flex-row items-center justify-center w-full h-96 dark:text-white'>
               <div className="hidden lg:flex">
                 <div className='fixed top-20 right-8 mt-4 sm:fixed sm:top-20 sm:left-8 w-8'>
                   <Link href='https://github.com/Flogert' target='_blank' title='Github Portfolio'>
-                    <Image className='mb-2 transition transform hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-amber-400 bg-gray-200 rounded-full border-2' src="/github.svg" layout="fixed" width={40} height={40} />
+                    <Image className='mb-2 transition transform hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-teal-400 bg-gray-200 rounded-full border-2' src="/github.svg" layout="fixed" width={40} height={40} />
                   </Link>
                   <Link href='https://www.linkedin.com/in/flogertbardhi/' target='_blank' title='LinkedIn Profile'>
-                    <Image className='mb-2 transition transform hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-amber-400 bg-gray-200 rounded-full border-2' src="/linkedin.svg" layout="fixed" width={40} height={40} />
+                    <Image className='mb-2 transition transform hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-teal-400 bg-gray-200 rounded-full border-2' src="/linkedin.svg" layout="fixed" width={40} height={40} />
                   </Link>
                   <Link href='https://twitter.com/HappyTreeArts' target='_blank' title='Not much of a tweeter!'>
-                    <Image className='mb-2 transition transform hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-amber-400 bg-gray-200 rounded-full border-2' src="/twitter.svg" layout="fixed" width={40} height={40} />
+                    <Image className='mb-2 transition transform hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-teal-400 bg-gray-200 rounded-full border-2' src="/twitter.svg" layout="fixed" width={40} height={40} />
                   </Link>
                   <Link href='https://www.instagram.com/happytreearts/' target='_blank' title='Happy little trees :)'>
-                    <Image className='mb-2 transition transform hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-amber-400 bg-gray-200 rounded-full border-2' src="/instagram.svg" layout="fixed" width={40} height={40} />
+                    <Image className='mb-2 transition transform hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-teal-400 bg-gray-200 rounded-full border-2' src="/instagram.svg" layout="fixed" width={40} height={40} />
                   </Link>
                 </div> 
               </div>
-              <div className='mx-10 my-16 lg:my-0 lg:mx-20 text-black font-semibold dark:text-white'>
+              <div className='mx-10 my-16 lg:my-0 lg:mx-20 dark:text-white'>
                 <div className='mb-10'>
                   <Typewriter
-                    
                     options={{
                       strings: ['Hello Internet!', 'Thanks for stopping by!'],
-                      150Start: true,
+                      autoStart: true,
                       loop: true,
                     }}
                   />
@@ -90,76 +89,75 @@ export default function Home() {
           </div>
           <div className='flex flex-col items-center justify-center align-middle'>
             <Link href='#projects' scroll={false} className='flex flex-col items-center justify-center align-middle'>
-              <h2 className='text-2xl border-b-2 border-b-slate-900 dark:border-b-slate-200'>Check out my work!</h2>
+              <h2 className='text-2xl border-b-2 border-b-slate-900 dark:border-b-slate-200'>My Work</h2>
               <FontAwesomeIcon
                 className='hover:transition-transform hover:translate-y-2'
                 icon={faAngleDown}
-                style={{ fontSize: 100, color: "goldenrod" }}
+                style={{ fontSize: 100, color: "teal" }}
               />
             </Link>
           </div>
-          <div id="projects" className='flex flex-col items-center justify-around w-7/12 max-h-screen dark:text-white bg-gray-200 rounded-2xl dark:bg-slate-700'>
+          <div id="projects" className='flex flex-col items-center justify-around w-7/12 max-h-screen dark:text-white rounded-2xl'>
             <div class="grid place-items-center h-fit min-h-screen px-10">
               <div class="p-4 max-w-5xl grid gap-4 xs:grid-cols-2 xs:p-8 md:grid-cols-4 lg:gap-6">
                 <h1 class="text-4xl font-extrabold xs:col-span-2 xs:grid xs:gap-4 xs:grid-cols-2 md:col-span-3 md:text-5xl md:grid-cols-3 lg:text-6xl">
-                  <span class="md:col-span-2">Projects</span>
+                  <span class="md:col-span-2">PROJECTS</span>
                 </h1>
                 <p class="xs:row-start-2 xs:col-start-2 xs:self-center md:col-start-1 md:col-span-2 md:pr-12 md:text-lg">Here are some of the web apps/challenges I have worked on.</p>
                 <Link href='/'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
-                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/projects/multi-step-form.PNG" responsive width={250} height={250} />
+                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-xl hover:shadow-slate-700 dark:shadow-lg dark:hover:shadow-teal-500" src="/projects/multi-step-form.PNG" responsive width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
-                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/projects/kojaba-dark.PNG" fixed width={250} height={250} />
+                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-xl hover:shadow-slate-700 dark:shadow-lg dark:hover:shadow-teal-500" src="/projects/kojaba-dark.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
-                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/projects/kojaba-light.PNG" fixed width={250} height={250} />
+                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-xl hover:shadow-slate-700 dark:shadow-lg dark:hover:shadow-teal-500" src="/projects/kojaba-light.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg md:col-start-2">
-                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/projects/product-preview.PNG" fixed width={250} height={250} />
+                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-xl hover:shadow-slate-700 dark:shadow-lg dark:hover:shadow-teal-500" src="/projects/product-preview.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
-                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/projects/cookie-modal.PNG" fixed width={250} height={250} />
+                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-xl hover:shadow-slate-700 dark:shadow-lg dark:hover:shadow-teal-500" src="/projects/cookie-modal.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
-                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/projects/meditation-time.PNG" fixed width={250} height={450} />
+                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-xl hover:shadow-slate-700 dark:shadow-lg dark:hover:shadow-teal-500" src="/projects/meditation-time.PNG" fixed width={250} height={450} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
-                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/projects/tribe-salon.PNG" fixed width={250} height={250} />
+                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-xl hover:shadow-slate-700 dark:shadow-lg dark:hover:shadow-teal-500" src="/projects/tribe-salon.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
-                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/projects/multi-step-form.PNG" fixed width={250} height={250} />
+                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-xl hover:shadow-slate-700 dark:shadow-lg dark:hover:shadow-teal-500" src="/projects/multi-step-form.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
-                <p class="mr-80 self-center md:text-lg md:col-span-2 md:text-center md:px-4">Store</p>
               </div>
             </div>
           </div>
           <div className='flex flex-col items-center justify-center align-middle h-fit'>
             <Link href='#art' scroll={false} className='flex flex-col items-center justify-center align-middle'>
-              <h2 className='text-2xl border-b-2 border-b-slate-900 dark:border-b-slate-200'>Happy little trees!</h2>
+              <h2 className='text-2xl border-b-2 border-b-slate-900 dark:border-b-slate-200'>Happy Little Trees</h2>
               <FontAwesomeIcon
                 className='hover:transition-transform hover:translate-y-2'
                 icon={faAngleDown}
-                style={{ fontSize: 100, color: "goldenrod" }}
+                style={{ fontSize: 100, color: "teal" }}
               />
             </Link>
           </div>
-          <div id="art" className='flex flex-col items-center justify-around w-7/12 max-h-screen dark:text-white bg-gray-200 rounded-sm dark:bg-slate-700'>
+          <div id="art" className='flex flex-col items-center justify-around w-7/12 max-h-screen dark:text-white rounded-sm'>
             <div class="grid place-items-center h-fit min-h-screen px-10">
               <div class="p-4 max-w-5xl grid gap-4 xs:grid-cols-2 xs:p-8 md:grid-cols-4 lg:gap-6">
                 <h1 class="text-4xl font-extrabold xs:col-span-2 xs:grid xs:gap-4 xs:grid-cols-2 md:col-span-3 md:text-5xl md:grid-cols-3 lg:text-6xl">
@@ -168,45 +166,44 @@ export default function Home() {
                 <p class="xs:row-start-2 xs:col-start-2 xs:self-center md:col-start-1 md:col-span-2 md:pr-12 md:text-lg">I paint mostly landscapes, using acrylic paints.</p>
                 <Link href='/'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
-                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/paintings/by-the-bridge.jpg" fixed width={250} height={250} />
+                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-xl hover:shadow-slate-700 dark:shadow-lg dark:hover:shadow-teal-500" src="/paintings/by-the-bridge.jpg" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
-                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/paintings/cabin.jpg" fixed width={250} height={250} />
+                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-xl hover:shadow-slate-700 dark:shadow-lg dark:hover:shadow-teal-500" src="/paintings/cabin.jpg" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
-                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/paintings/viego.jpg" fixed width={250} height={250} />
+                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-xl hover:shadow-slate-700 dark:shadow-lg dark:hover:shadow-teal-500" src="/paintings/viego.jpg" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg md:col-start-2">
-                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/paintings/sunset.jpeg" fixed width={250} height={250} />
+                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-xl hover:shadow-slate-700 dark:shadow-lg dark:hover:shadow-teal-500" src="/paintings/sunset.jpeg" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
-                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/paintings/warwick.jpg" fixed width={250} height={250} />
+                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-xl hover:shadow-slate-700 dark:shadow-lg dark:hover:shadow-teal-500" src="/paintings/warwick.jpg" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
-                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/paintings/charlie.jpg" fixed width={250} height={450} />
+                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-xl hover:shadow-slate-700 dark:shadow-lg dark:hover:shadow-teal-500" src="/paintings/charlie.jpg" fixed width={250} height={450} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
-                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/paintings/horizon.jpg" fixed width={250} height={250} />
+                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-xl hover:shadow-slate-700 dark:shadow-lg dark:hover:shadow-teal-500" src="/paintings/horizon.jpg" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
-                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/paintings/hogwarts.jpg" fixed width={250} height={250} />
+                    <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-xl hover:shadow-slate-700 dark:shadow-lg dark:hover:shadow-teal-500" src="/paintings/hogwarts.jpg" fixed width={250} height={250} />
                   </div>
                 </Link>
-                <p class="mr-80 self-center md:text-lg md:col-span-2 md:text-center md:px-4">Store</p>
               </div>
             </div>
           </div>

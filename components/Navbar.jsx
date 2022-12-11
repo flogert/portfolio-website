@@ -16,7 +16,7 @@ const Navbar = () => {
     if (!mounted) return null;
     const currentTheme = theme === 'system' ? systemTheme : theme;
     if (currentTheme === 'dark') {
-        return (<SunIcon className='w-8 h-8 relative top-2 bg-amber-500 shadow-sm shadow-slate-200 rounded-md' role='button' onClick={()=> setTheme('light')} />)
+        return (<SunIcon className='w-8 h-8 relative top-2 bg-teal-500 shadow-sm shadow-slate-200 rounded-md' role='button' onClick={()=> setTheme('light')} />)
     } else {
         return (<MoonIcon className='w-8 h-8 relative top-2 bg-white shadow-sm shadow-slate-900 rounded-md' role='button' onClick={()=> setTheme('dark')} />)
     }
@@ -24,11 +24,11 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-        <nav className='fixed w-full h-fit z-10 bg-gray-200 dark:bg-slate-800 overflow-hidden'>
+        <nav className='fixed w-full h-fit z-10 bg-slate-200 dark:bg-slate-900 overflow-hidden'>
             <div className='w-full'>
                 <div className='flex flex-col justify-center items-center h-20 w-full'>
                     <div className='hidden md:block'>
-                        <div className='flex items-baseline justify-center space-x-20 dark:text-white'>
+                        <div className='flex items-baseline justify-center gap-20 dark:text-white'>
                             <Link 
                                 activeClass='home'
                                 href='/' 
@@ -36,7 +36,18 @@ const Navbar = () => {
                                 smooth={true}
                                 offset={50}
                                 duration={500}
-                                className='cursor-pointer text-teal-900 font-semibold hover:shadow-slate-400 hover:bg-amber-400 hover:text-black hover:shadow-sm rounded-lg transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none dark:hover:text-black text-sm px-3 py-2 text-md dark:text-teal-100'
+                                className='cursor-pointer fixed right-8 top-8 dark:text-teal-100'
+                            >
+                                Flogert Bardhi
+                            </Link>
+                            <Link 
+                                activeClass='home'
+                                href='/' 
+                                to='about'
+                                smooth={true}
+                                offset={50}
+                                duration={500}
+                                className='cursor-pointer font-semibold hover:bg-teal-500 hover:text-black hover:shadow-sm rounded-lg transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none dark:hover:text-black text-sm px-3 py-2 text-md dark:text-teal-100'
                             >
                                 Home
                             </Link>
@@ -45,7 +56,7 @@ const Navbar = () => {
                                 href='#projects'  
                                 to='projects'
                                 scroll={false}
-                                className='cursor-pointer text-teal-900 font-semibold hover:shadow-slate-400 hover:bg-amber-400 hover:text-black hover:shadow-sm rounded-lg transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none dark:hover:text-black text-sm px-3 py-2 text-md dark:text-teal-100'
+                                className='cursor-pointer font-semibold hover:bg-teal-500 hover:text-black hover:shadow-sm rounded-lg transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none dark:hover:text-black text-sm px-3 py-2 text-md dark:text-teal-100'
                             >
                                 Projects
                             </Link>
@@ -54,7 +65,7 @@ const Navbar = () => {
                                 href='#art'  
                                 to='art' 
                                 scroll={false}
-                                className='cursor-pointer text-teal-900 font-semibold hover:shadow-slate-400 hover:bg-amber-400 hover:text-black hover:shadow-sm rounded-lg transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none dark:hover:text-black text-sm px-3 py-2 text-md dark:text-teal-100'
+                                className='cursor-pointer font-semibold hover:bg-teal-500 hover:text-black hover:shadow-sm rounded-lg transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none dark:hover:text-black text-sm px-3 py-2 text-md dark:text-teal-100'
                             >
                                 Art
                             </Link>
@@ -109,7 +120,7 @@ const Navbar = () => {
                     <div className="md:hidden flex flex-col text-center" id="mobile-menu">
                         <div
                             ref={ref}
-                            className="bg-gray-200 px-2 pt-2 pb-3 space-y-1 sm:px-3 dark:bg-slate-400 dark:text-white"
+                            className="bg-gray-200 px-2 pt-2 pb-3 space-y-1 sm:px-3 dark:bg-teal-500 dark:text-white"
                         >
                             <Link
                                 href="/"
