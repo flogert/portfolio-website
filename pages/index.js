@@ -51,7 +51,7 @@ export default function Home() {
                     
                     options={{
                       strings: ['Hello Internet!', 'Thanks for stopping by!'],
-                      autoStart: true,
+                      150Start: true,
                       loop: true,
                     }}
                   />
@@ -106,42 +106,42 @@ export default function Home() {
                 </h1>
                 <p class="xs:row-start-2 xs:col-start-2 xs:self-center md:col-start-1 md:col-span-2 md:pr-12 md:text-lg">Here are some of the web apps/challenges I have worked on.</p>
                 <Link href='/'>
-                  <div class="h-40 xs:h-auto xs:square rounded-lg">
+                  <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/projects/multi-step-form.PNG" responsive width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
-                  <div class="h-40 xs:h-auto xs:square rounded-lg">
+                  <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/projects/kojaba-dark.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
-                  <div class="h-40 xs:h-auto xs:square rounded-lg">
+                  <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/projects/kojaba-light.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
-                  <div class="h-40 xs:h-auto xs:square rounded-lg md:col-start-2">
+                  <div class="h-40 xs:h-80 xs:square rounded-lg md:col-start-2">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/projects/product-preview.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
-                  <div class="h-40 xs:h-auto xs:square rounded-lg">
+                  <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/projects/cookie-modal.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
-                  <div class="h-40 xs:h-auto xs:square rounded-lg">
+                  <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/projects/meditation-time.PNG" fixed width={250} height={450} />
                   </div>
                 </Link>
                 <Link href='/'>
-                  <div class="h-40 xs:h-auto xs:square rounded-lg">
+                  <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/projects/tribe-salon.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
-                  <div class="h-40 xs:h-auto xs:square rounded-lg">
+                  <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/projects/multi-step-form.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
@@ -167,42 +167,42 @@ export default function Home() {
                 </h1>
                 <p class="xs:row-start-2 xs:col-start-2 xs:self-center md:col-start-1 md:col-span-2 md:pr-12 md:text-lg">I paint mostly landscapes, using acrylic paints.</p>
                 <Link href='/'>
-                  <div class="h-40 xs:h-auto xs:square rounded-lg">
+                  <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/paintings/by-the-bridge.jpg" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
-                  <div class="h-40 xs:h-auto xs:square rounded-lg">
+                  <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/paintings/cabin.jpg" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
-                  <div class="h-40 xs:h-auto xs:square rounded-lg">
+                  <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/paintings/viego.jpg" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
-                  <div class="h-40 xs:h-auto xs:square rounded-lg md:col-start-2">
+                  <div class="h-40 xs:h-80 xs:square rounded-lg md:col-start-2">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/paintings/sunset.jpeg" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
-                  <div class="h-40 xs:h-auto xs:square rounded-lg">
+                  <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/paintings/warwick.jpg" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
-                  <div class="h-40 xs:h-auto xs:square rounded-lg">
+                  <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/paintings/charlie.jpg" fixed width={250} height={450} />
                   </div>
                 </Link>
                 <Link href='/'>
-                  <div class="h-40 xs:h-auto xs:square rounded-lg">
+                  <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/paintings/horizon.jpg" fixed width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
-                  <div class="h-40 xs:h-auto xs:square rounded-lg">
+                  <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-500 hover:shadow-md hover:shadow-slate-700 dark:shadow-md dark:hover:shadow-teal-700" src="/paintings/hogwarts.jpg" fixed width={250} height={250} />
                   </div>
                 </Link>
