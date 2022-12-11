@@ -107,7 +107,7 @@ export default function Home() {
                 <p class="xs:row-start-2 xs:col-start-2 xs:self-center md:col-start-1 md:col-span-2 md:pr-12 md:text-lg">Here are some of the web apps/challenges I have worked on.</p>
                 <Link href='/'>
                   <div class="h-40 xs:h-auto xs:square rounded-lg">
-                    <Image className="rounded-2xl hover:scale-150 ease-in duration-500" src="/projects/multi-step-form.PNG" fixed width={250} height={250} />
+                    <Image className="rounded-2xl hover:scale-150 ease-in duration-500" src="/projects/multi-step-form.PNG" responsive width={250} height={250} />
                   </div>
                 </Link>
                 <Link href='/'>
