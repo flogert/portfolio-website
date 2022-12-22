@@ -16,9 +16,9 @@ const Navbar = () => {
     if (!mounted) return null;
     const currentTheme = theme === 'system' ? systemTheme : theme;
     if (currentTheme === 'dark') {
-        return (<SunIcon className='w-8 h-8 relative top-2 bg-teal-500 shadow-sm shadow-slate-200 rounded-md' role='button' onClick={()=> setTheme('light')} />)
+        return (<SunIcon className='w-8 h-8 relative top-2 bg-slate-900 rounded-md' role='button' onClick={()=> setTheme('light')} />)
     } else {
-        return (<MoonIcon className='w-8 h-8 relative top-2 bg-white shadow-sm shadow-slate-900 rounded-md' role='button' onClick={()=> setTheme('dark')} />)
+        return (<MoonIcon className='w-8 h-8 relative top-2 bg-slate-200 rounded-md' role='button' onClick={()=> setTheme('dark')} />)
     }
   };
   const [isOpen, setIsOpen] = useState(false);
@@ -29,6 +29,9 @@ const Navbar = () => {
                 <div className='flex flex-col justify-center items-center h-20 w-full'>
                     <div className='hidden md:block'>
                         <div className='flex items-baseline justify-center gap-20 dark:text-white'>
+                            <div className='cursor-pointer fixed left-8 top-4 dark:text-teal-100'>
+                                {renderThemeChanger()}
+                            </div> 
                             <Link 
                                 activeClass='home'
                                 href='/' 
@@ -68,10 +71,7 @@ const Navbar = () => {
                                 className='cursor-pointer font-semibold hover:bg-teal-500 hover:text-black hover:shadow-sm rounded-lg transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none dark:hover:text-black text-sm px-3 py-2 text-md dark:text-teal-100'
                             >
                                 ART
-                            </Link>
-                            <div className=''>
-                                {renderThemeChanger()}
-                            </div>           
+                            </Link>        
                         </div>
                     </div>
                     <div className='flex md:hidden'>
@@ -120,7 +120,7 @@ const Navbar = () => {
                     <div className="md:hidden flex flex-col text-center" id="mobile-menu">
                         <div
                             ref={ref}
-                            className="bg-gray-200 px-2 pt-2 pb-3 space-y-1 sm:px-3 dark:bg-teal-500 dark:text-white"
+                            className="bg-slate-200 px-2 pt-2 pb-3 space-y-1 sm:px-3 dark:bg-teal-500 dark:text-white"
                         >
                             <Link
                                 href="/"
