@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Footer = () => {
   return (
-    <div className='bg-slate-200 dark:bg-slate-900 h-fit w-full flex md:flex-row flex-col justify-center gap-20 items-center'>
+    <div className='bg-slate-200 dark:bg-slate-900 h-fit w-full flex md:flex-row flex-col justify-center gap-20 items-center pt-20'>
       <div className='flex md:flex-row flex-col text-center p-2'>
         <ul>
           <p className='mb-8 text-gray-800 font-bold text-lg dark:text-white'>CONTACT</p>
@@ -37,17 +37,17 @@ const Footer = () => {
             </Link>
           </li>
           <li className='text-gray-800 dark:text-gray-200 before:pb-2 hover:text-teal-800 dark:hover:text-teal-200 cursor-pointer'>
-            <Link href='#art' scroll={false}>
-              Paintings
-            </Link>
-          </li>
-          <li className='text-gray-800 dark:text-gray-200 before:pb-2 hover:text-teal-800 dark:hover:text-teal-200 cursor-pointer'>
-            <Link href='#poems'>
+            <Link href='#blog'>
               Blog
             </Link>
           </li>
           <li className='text-gray-800 dark:text-gray-200 before:pb-2 hover:text-teal-800 dark:hover:text-teal-200 cursor-pointer'>
-            <Link href='#poems'>
+            <Link href='https://www.deviantart.com/happytreearts' target='_blank'>
+              Paintings
+            </Link>
+          </li>
+          <li className='text-gray-800 dark:text-gray-200 before:pb-2 hover:text-teal-800 dark:hover:text-teal-200 cursor-pointer'>
+            <Link href='https://flogertbardhipoems.blogspot.com/' target='_blank'>
               Poems
             </Link>
           </li>

@@ -104,42 +104,42 @@ export default function Home() {
                   <span class="md:col-span-2">PROJECTS</span>
                 </h1>
                 <p class="xs:row-start-2 xs:col-start-2 xs:self-center md:col-start-1 md:col-span-2 md:pr-12 md:text-lg">Here are some of the web apps/challenges I have worked on.</p>
-                <Link href='/'>
+                <Link href='https://flogert.github.io/multi-step-form/' target='_blank'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/projects/multi-step-form.PNG" responsive width={250} height={250} />
                   </div>
                 </Link>
-                <Link href='/'>
+                <Link href='#' target='_blank'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/projects/kojaba-dark.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
-                <Link href='/'>
+                <Link href='#' target='_blank'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/projects/kojaba-light.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
-                <Link href='/'>
+                <Link href='https://flogert.github.io/product-preview/' target='_blank'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg md:col-start-2">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/projects/product-preview.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
-                <Link href='/'>
+                <Link href='https://flogert.github.io/cookie-modal/' target='_blank'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/projects/cookie-modal.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
-                <Link href='/'>
+                <Link href='https://flogert.github.io/meditation-time/' target='_blank'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/projects/meditation-time.PNG" fixed width={250} height={450} />
                   </div>
                 </Link>
-                <Link href='/'>
+                <Link href='https://flogert.github.io/tribe-salon/' target='_blank'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/projects/tribe-salon.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
-                <Link href='/'>
+                <Link href='https://flogert.github.io/multi-step-form/' target='_blank'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/projects/multi-step-form.PNG" fixed width={250} height={250} />
                   </div>
@@ -164,32 +164,28 @@ export default function Home() {
                   <span class="md:col-span-2">Artwork</span>
                 </h1>
                 <p class="xs:row-start-2 xs:col-start-2 xs:self-center md:col-start-1 md:col-span-2 md:pr-12 md:text-lg">I paint mostly landscapes, using acrylic paints.</p>
-                <Link href='/'>
+                <Link href='https://www.instagram.com/p/B32iJHFJ63l/' target='_blank'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/paintings/by-the-bridge.jpg" fixed width={250} height={250} />
                   </div>
                 </Link>
-                <Link href='/'>
+                <Link href='https://www.instagram.com/p/B8GFSxapdPT/' target='_blank'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/paintings/cabin.jpg" fixed width={250} height={250} />
                   </div>
                 </Link>
-                <Link href='/'>
-                  <div class="h-40 xs:h-80 xs:square rounded-lg">
-                    <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/paintings/viego.jpg" fixed width={250} height={250} />
-                  </div>
-                </Link>
-                <Link href='/'>
+                
+                <Link href='https://www.instagram.com/p/BygiUYdpAqE/' target='_blank'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg md:col-start-2">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/paintings/sunset.jpeg" fixed width={250} height={250} />
                   </div>
                 </Link>
-                <Link href='/'>
+                <Link href='https://www.instagram.com/p/CC_ViXIl3I1/' target='_blank'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/paintings/warwick.jpg" fixed width={250} height={250} />
                   </div>
                 </Link>
-                <Link href='/'>
+                <Link href='https://www.instagram.com/p/B17jMxgJiF-/' target='_blank'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/paintings/charlie.jpg" fixed width={250} height={450} />
                   </div>
@@ -199,9 +195,14 @@ export default function Home() {
                     <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/paintings/horizon.jpg" fixed width={250} height={250} />
                   </div>
                 </Link>
-                <Link href='/'>
+                <Link href='https://www.instagram.com/p/CK4Tb9AlcGQ/' target='_blank'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/paintings/hogwarts.jpg" fixed width={250} height={250} />
+                  </div>
+                </Link>
+                <Link href='https://www.instagram.com/p/CmajWeZOSSj/' target='_blank'>
+                  <div class="h-40 xs:h-80 xs:square rounded-lg">
+                    <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/paintings/aloy.jpg" fixed width={250} height={450} />
                   </div>
                 </Link>
               </div>
