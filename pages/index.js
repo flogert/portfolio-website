@@ -190,6 +190,11 @@ export default function Home() {
                     <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/paintings/charlie.jpg" fixed width={250} height={450} />
                   </div>
                 </Link>
+                <Link href='https://www.instagram.com/p/CmajWeZOSSj/' target='_blank'>
+                  <div class="h-40 xs:h-80 xs:square rounded-lg">
+                    <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/paintings/aloy.jpg" fixed width={250} height={450} />
+                  </div>
+                </Link>
                 <Link href='https://www.instagram.com/p/B9M92nOpGfE/' target='_blank'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/paintings/horizon.jpg" fixed width={250} height={250} />
@@ -198,11 +203,6 @@ export default function Home() {
                 <Link href='https://www.instagram.com/p/CK4Tb9AlcGQ/' target='_blank'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/paintings/hogwarts.jpg" fixed width={250} height={250} />
-                  </div>
-                </Link>
-                <Link href='https://www.instagram.com/p/CmajWeZOSSj/' target='_blank'>
-                  <div class="h-40 xs:h-80 xs:square rounded-lg">
-                    <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/paintings/aloy.jpg" fixed width={250} height={450} />
                   </div>
                 </Link>
               </div>
