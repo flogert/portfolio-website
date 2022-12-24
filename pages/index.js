@@ -139,7 +139,7 @@ export default function Home() {
                     <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/projects/tribe-salon.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
-                <Link href='https://flogert.github.io/multi-step-form/' target='_blank'>
+                <Link href='https://flogert.github.io/multi-step-form-main/' target='_blank'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/projects/multi-step-form.PNG" fixed width={250} height={250} />
                   </div>
