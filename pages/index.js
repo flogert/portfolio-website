@@ -104,7 +104,7 @@ export default function Home() {
                   <span class="md:col-span-2">PROJECTS</span>
                 </h1>
                 <p class="xs:row-start-2 xs:col-start-2 xs:self-center md:col-start-1 md:col-span-2 md:pr-12 md:text-lg">Here are some of the web apps/challenges I have worked on.</p>
-                <Link href='https://flogert.github.io/multi-step-form/' target='_blank'>
+                <Link href='https://flogert.github.io/multi-step-form-main/' target='_blank'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/projects/multi-step-form.PNG" responsive width={250} height={250} />
                   </div>
@@ -139,9 +139,9 @@ export default function Home() {
                     <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/projects/tribe-salon.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
-                <Link href='https://flogert.github.io/multi-step-form-main/' target='_blank'>
+                <Link href='https://flogert.github.io/advice-generator-api/' target='_blank'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
-                    <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/projects/multi-step-form.PNG" fixed width={250} height={250} />
+                    <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/projects/advice-generator.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
               </div>
