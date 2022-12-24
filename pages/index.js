@@ -119,7 +119,7 @@ export default function Home() {
                     <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/projects/kojaba-light.PNG" fixed width={250} height={250} />
                   </div>
                 </Link>
-                <Link href='https://flogert.github.io/product-preview/' target='_blank'>
+                <Link href='https://flogert.github.io/product-preview-card-component-main/' target='_blank'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg md:col-start-2">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/projects/product-preview.PNG" fixed width={250} height={250} />
                   </div>
