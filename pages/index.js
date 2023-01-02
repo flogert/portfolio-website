@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Flogert Bardhi - Web Dev</title>
+        <title>Flogert Bardhi</title>
         <meta name="description" content="Flogert Bardhi Portfolio Website" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"></link>
@@ -97,13 +97,13 @@ export default function Home() {
               />
             </Link>
           </div>
-          <div id="projects" className='flex flex-col items-center justify-around w-7/12 max-h-screen dark:text-white rounded-2xl'>
-            <div class="grid place-items-center h-fit min-h-screen px-10">
-              <div class="p-4 max-w-5xl grid gap-4 xs:grid-cols-2 xs:p-8 md:grid-cols-4 lg:gap-6">
-                <h1 class="text-4xl font-extrabold xs:col-span-2 xs:grid xs:gap-4 xs:grid-cols-2 md:col-span-3 md:text-5xl md:grid-cols-3 lg:text-6xl">
-                  <span class="md:col-span-2">PROJECTS</span>
+          <div id="projects" className='flex flex-col items-center justify-around w-7/12 min-h-screen dark:text-white rounded-2xl'>
+            <div class="grid place-items-center h-fit px-10">
+              <div class="p-2 max-w-5xl grid gap-4 xs:grid-cols-2 xs:p-8 md:grid-cols-4 lg:gap-6">
+                <h1 class="text-4xl font-extrabold xs:col-span-2 xs:grid xs:gap-4 xs:grid-cols-1 md:col-span-3 md:text-5xl md:grid-cols-3 lg:text-6xl">
+                  <span class="hidden md:col-span-2 xs:grid md:grid">PROJECTS</span>
                 </h1>
-                <p class="xs:row-start-2 xs:col-start-2 xs:self-center md:col-start-1 md:col-span-2 md:pr-12 md:text-lg">Here are some of the web apps/challenges I have worked on.</p>
+                <p class="hidden xs:grid md:grid xs:row-start-2 xs:col-start-2 xs:self-center md:col-start-1 md:col-span-2 md:pr-12 md:text-lg">Here are some of the web apps/challenges I have worked on.</p>
                 <Link href='https://flogert.github.io/multi-step-form-main/' target='_blank'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/projects/multi-step-form.PNG" responsive width={250} height={250} />
@@ -125,8 +125,8 @@ export default function Home() {
                   </div>
                 </Link>
                 <Link href='https://flogert.github.io/cookies-modal/' target='_blank'>
-                  <div class="h-40 xs:h-80 xs:square rounded-lg">
-                    <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/projects/cookie-modal.PNG" fixed width={250} height={250} />
+                  <div class="h-40 xs:h-80 xs:w-80 xs:square rounded-lg">
+                    <Image className="w-80 rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/projects/cookie-modal.PNG" fixed width={150} height={250} />
                   </div>
                 </Link>
                 <Link href='https://flogert.github.io/meditation-time/' target='_blank'>
@@ -157,13 +157,13 @@ export default function Home() {
               />
             </Link>
           </div>
-          <div id="art" className='flex flex-col items-center justify-around w-7/12 max-h-screen dark:text-white rounded-sm'>
-            <div class="grid place-items-center h-fit min-h-screen px-10">
-              <div class="p-4 max-w-5xl grid gap-4 xs:grid-cols-2 xs:p-8 md:grid-cols-4 lg:gap-6">
+          <div id="art" className='flex flex-col items-center justify-around h-fit w-7/12 min-h-screen dark:text-white rounded-sm'>
+            <div class="grid place-items-center h-fit px-10">
+              <div class="p-2 max-w-5xl grid gap-4 xs:grid-cols-2 xs:p-8 md:grid-cols-4 lg:gap-6">
                 <h1 class="text-4xl font-extrabold xs:col-span-2 xs:grid xs:gap-4 xs:grid-cols-2 md:col-span-3 md:text-5xl md:grid-cols-3 lg:text-6xl">
-                  <span class="md:col-span-2">Artwork</span>
+                  <span class="hidden md:col-span-2 xs:grid md:grid">Artwork</span>
                 </h1>
-                <p class="xs:row-start-2 xs:col-start-2 xs:self-center md:col-start-1 md:col-span-2 md:pr-12 md:text-lg">I paint mostly landscapes, using acrylic paints.</p>
+                <p class="hidden xs:row-start-2 xs:col-start-2 xs:self-center md:col-start-1 md:col-span-2 md:pr-12 md:text-lg xs:grid md:grid">I paint mostly landscapes, using acrylic paints.</p>
                 <Link href='https://www.instagram.com/p/B32iJHFJ63l/' target='_blank'>
                   <div class="h-40 xs:h-80 xs:square rounded-lg">
                     <Image className="rounded-sm hover:scale-150 ease-in duration-200 hover:shadow-xl hover:shadow-slate-500 dark:shadow-lg dark:hover:shadow-teal-800" src="/paintings/by-the-bridge.jpg" fixed width={250} height={250} />

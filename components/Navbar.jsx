@@ -71,7 +71,7 @@ const Navbar = () => {
                                 className='cursor-pointer font-semibold hover:bg-teal-500 hover:text-black hover:shadow-sm rounded-lg transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none dark:hover:text-black text-sm px-3 py-2 text-md dark:text-teal-100'
                             >
                                 ART
-                            </Link>        
+                            </Link>               
                         </div>
                     </div>
                     <div className='flex md:hidden'>
