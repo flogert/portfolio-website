@@ -77,6 +77,13 @@ const Navbar = () => {
                                 className='text-gray-600 dark:text-space-accent hover:text-teal-600 dark:hover:text-space-neon dark:hover:neon-text px-3 py-2 rounded-md text-sm font-medium transition-all duration-300'
                             >
                                 ART
+                            </Link>
+                            <Link 
+                                href='#poems'  
+                                scroll={false}
+                                className='text-gray-600 dark:text-space-accent hover:text-teal-600 dark:hover:text-space-neon dark:hover:neon-text px-3 py-2 rounded-md text-sm font-medium transition-all duration-300'
+                            >
+                                POEMS
                             </Link>               
                         </div>
                     </div>
@@ -145,6 +152,12 @@ const Navbar = () => {
                                 className="text-gray-600 dark:text-space-accent hover:bg-teal-50 dark:hover:bg-space-purple hover:text-teal-600 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                             >
                                 Art
+                            </Link>
+                            <Link
+                                href="#poems"
+                                className="text-gray-600 dark:text-space-accent hover:bg-teal-50 dark:hover:bg-space-purple hover:text-teal-600 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                            >
+                                Poems
                             </Link>
                         </div>
 					</div>

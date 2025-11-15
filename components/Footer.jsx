@@ -57,7 +57,7 @@ const Footer = () => {
             </Link>
           </li>
           <li>
-            <Link href='https://flogertbardhipoems.blogspot.com/' target='_blank' className='text-gray-600 dark:text-space-accent hover:text-teal-600 dark:hover:text-space-neon transition-colors'>
+            <Link href='#poems' scroll={false} className='text-gray-600 dark:text-space-accent hover:text-teal-600 dark:hover:text-space-neon transition-colors'>
               Poems
             </Link>
           </li>
