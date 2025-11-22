@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { Transition } from '@headlessui/react';
 import { useTheme } from 'next-themes';
-import { MoonIcon, SunIcon } from '@heroicons/react/solid';
 
 const Navbar = () => {
-  const {systemTheme, theme, setTheme} = useTheme();
+  const { systemTheme, theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  
+  const [isOpen, setIsOpen] = useState(false);
+
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -15,69 +15,74 @@ const Navbar = () => {
   const renderThemeChanger = () => {
     if (!mounted) return null;
     const currentTheme = theme === 'system' ? systemTheme : theme;
+    
     if (currentTheme === 'dark') {
-        return (<SunIcon className='w-8 h-8 relative top-2 bg-slate-900 rounded-md' role='button' onClick={()=> setTheme('light')} />)
+        return (
+            <button 
+                className='w-8 h-8 p-1 rounded-md hover:bg-gray-200 dark:hover:bg-space-light transition-colors focus:outline-none' 
+                onClick={() => setTheme('light')}
+                aria-label="Switch to Light Mode"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+            </button>
+        )
     } else {
-        return (<MoonIcon className='w-8 h-8 relative top-2 bg-slate-200 rounded-md' role='button' onClick={()=> setTheme('dark')} />)
+        return (
+            <button 
+                className='w-8 h-8 p-1 rounded-md hover:bg-gray-200 dark:hover:bg-space-light transition-colors focus:outline-none' 
+                onClick={() => setTheme('dark')}
+                aria-label="Switch to Dark Mode"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-space-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                </svg>
+            </button>
+        )
     }
   };
-  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div>
-        <nav className='fixed w-full h-fit z-10 bg-slate-200 dark:bg-slate-900 overflow-hidden'>
-            <div className='w-full'>
-                <div className='flex flex-col justify-center items-center h-20 w-full'>
+        <nav className='fixed w-full h-20 z-50 bg-white/80 dark:bg-space-dark/80 backdrop-blur-md border-b border-gray-200 dark:border-space-light transition-colors duration-300'>
+            <div className='w-full h-full'>
+                <div className='flex items-center justify-between h-full px-8 max-w-7xl mx-auto'>
+                    <div className='flex-shrink-0'>
+                        <Link href='/' className='text-2xl font-bold text-teal-600 dark:text-space-neon dark:neon-text transition-colors duration-300'>
+                            Flogert Bardhi
+                        </Link>
+                    </div>
                     <div className='hidden md:block'>
-                        <div className='flex items-baseline justify-center gap-20 dark:text-white'>
-                            <div className='cursor-pointer fixed left-8 top-4 dark:text-teal-100'>
-                                {renderThemeChanger()}
-                            </div> 
+                        <div className='ml-10 flex items-center space-x-8'>
+                            {renderThemeChanger()}
                             <Link 
-                                activeClass='home'
                                 href='/' 
-                                to='about'
-                                smooth={true}
-                                offset={50}
-                                duration={500}
-                                className='cursor-pointer fixed right-8 top-8 dark:text-teal-100'
-                            >
-                                Flogert Bardhi
-                            </Link>
-                            <Link 
-                                activeClass='home'
-                                href='/' 
-                                to='about'
-                                smooth={true}
-                                offset={50}
-                                duration={500}
-                                className='cursor-pointer font-semibold hover:bg-teal-500 hover:text-black hover:shadow-sm rounded-lg transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none dark:hover:text-black text-sm px-3 py-2 text-md dark:text-teal-100'
+                                className='text-gray-600 dark:text-space-accent hover:text-teal-600 dark:hover:text-space-neon dark:hover:neon-text px-3 py-2 rounded-md text-sm font-medium transition-all duration-300'
                             >
                                 HOME
                             </Link>
                             <Link 
-                                activeClass='projects'
                                 href='#projects'  
-                                to='projects'
                                 scroll={false}
-                                className='cursor-pointer font-semibold hover:bg-teal-500 hover:text-black hover:shadow-sm rounded-lg transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none dark:hover:text-black text-sm px-3 py-2 text-md dark:text-teal-100'
+                                className='text-gray-600 dark:text-space-accent hover:text-teal-600 dark:hover:text-space-neon dark:hover:neon-text px-3 py-2 rounded-md text-sm font-medium transition-all duration-300'
                             >
                                 PROJECTS
                             </Link>
                             <Link 
-                                activeClass='art'
                                 href='#art'  
-                                to='art' 
                                 scroll={false}
-                                className='cursor-pointer font-semibold hover:bg-teal-500 hover:text-black hover:shadow-sm rounded-lg transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none dark:hover:text-black text-sm px-3 py-2 text-md dark:text-teal-100'
+                                className='text-gray-600 dark:text-space-accent hover:text-teal-600 dark:hover:text-space-neon dark:hover:neon-text px-3 py-2 rounded-md text-sm font-medium transition-all duration-300'
                             >
                                 ART
                             </Link>               
                         </div>
                     </div>
-                    <div className='flex md:hidden'>
+                    <div className='flex md:hidden items-center gap-4'>
+                        {renderThemeChanger()}
                         <button onClick={() =>setIsOpen(!isOpen)} 
                             type='button' 
-                            className='bg-teal-700 inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-teal-700 focus:outline-none focus:ring-offset-2 focus:ring-offset-blue-800 focus:ring-white'
+                            className='bg-gray-200 dark:bg-space-light inline-flex items-center justify-center p-2 rounded-md text-gray-600 dark:text-space-accent hover:text-white hover:bg-teal-600 dark:hover:bg-space-purple focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 dark:focus:ring-offset-space-dark focus:ring-white'
                             aria-controls='mobile-menu'
                             aria-expanded='false'
                         >
@@ -116,42 +121,26 @@ const Navbar = () => {
                 leaveTo="opacity-0 scale-95"
             >
                 {(ref) => (
-                    //Handle the mobile menu tabs
-                    <div className="md:hidden flex flex-col text-center" id="mobile-menu">
+                    <div className="md:hidden" id="mobile-menu">
                         <div
                             ref={ref}
-                            className="bg-slate-200 px-2 pt-2 pb-3 space-y-1 sm:px-3 dark:bg-teal-500 dark:text-white"
+                            className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white dark:bg-space-light border-b border-gray-200 dark:border-space-purple"
                         >
                             <Link
                                 href="/"
-                                activeClass="home"
-                                to="home"
-                                smooth={true}
-                                offset={50}
-                                duration={500}
-                                className="cursor-pointer hover:bg-teal-700 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                className="text-gray-600 dark:text-space-accent hover:bg-teal-50 dark:hover:bg-space-purple hover:text-teal-600 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                             >
                                 Home
                             </Link>
                             <Link
                                 href="#projects"
-                                activeClass="projects"
-                                to="projects"
-                                smooth={true}
-                                offset={50}
-                                duration={500}
-                                className="cursor-pointer hover:bg-teal-700 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                className="text-gray-600 dark:text-space-accent hover:bg-teal-50 dark:hover:bg-space-purple hover:text-teal-600 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                             >
                                 Projects
                             </Link>
                             <Link
                                 href="#art"
-                                activeClass="art"
-                                to="art"
-                                smooth={true}
-                                offset={50}
-                                duration={500}
-                                className="cursor-pointer hover:bg-teal-700 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                className="text-gray-600 dark:text-space-accent hover:bg-teal-50 dark:hover:bg-space-purple hover:text-teal-600 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                             >
                                 Art
                             </Link>

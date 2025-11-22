@@ -4,12 +4,22 @@
 
 @layer base {
     body {
-        @apply bg-gray-50 text-gray-900 dark:bg-slate-800 dark:text-gray-100;
+        @apply bg-gray-50 text-gray-900 dark:bg-space-dark dark:text-space-accent;
         @apply min-h-screen;
     }
 
+    .dark body {
+        background-image: 
+            radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 3px),
+            radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 2px),
+            radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 3px);
+        background-size: 550px 550px, 350px 350px, 250px 250px;
+        background-position: 0 0, 40px 60px, 130px 270px;
+        background-attachment: fixed;
+    }
+
     ::selection {
-        @apply text-white bg-teal-700;
+        @apply text-white bg-teal-500 dark:text-space-dark dark:bg-space-neon;
     }
     html {
         @apply scroll-smooth;
@@ -18,5 +28,17 @@
 
 * {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
+}
+
+.neon-border {
+    @apply shadow-[0_0_5px_rgba(0,212,255,0.5)] dark:shadow-[0_0_5px_#00D4FF,0_0_10px_#00D4FF];
+}
+
+.neon-text {
+    @apply drop-shadow-[0_0_2px_rgba(0,212,255,0.5)] dark:drop-shadow-[0_0_5px_#00D4FF];
+}
+
+.dark .neon-text {
+    text-shadow: 0 0 10px #00D4FF;
 }
