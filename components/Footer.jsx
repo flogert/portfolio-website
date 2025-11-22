@@ -10,16 +10,16 @@ const Footer = () => {
           <p className='mb-8 text-gray-800 font-bold text-lg dark:text-white'>CONTACT</p>
           <div className='flex gap-6 pb-5 text-sm'>
             <Link href='https://github.com/Flogert' target='_blank' title='Github Portfolio'>
-              <Image className='transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-teal-400 bg-gray-200 rounded-full border-2' src="/github.svg" layout="fixed" width={40} height={40} />
+              <Image className='transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-teal-400 bg-gray-200 rounded-full border-2' src="/github.svg" layout="fixed" width={40} height={40} alt="GitHub" />
             </Link>
             <Link href='https://www.linkedin.com/in/flogertbardhi/' target='_blank' title='LinkedIn Profile'>
-              <Image className='transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-teal-400 bg-gray-200 rounded-full border-2' src="/linkedin.svg" layout="fixed" width={40} height={40} />
+              <Image className='transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-teal-400 bg-gray-200 rounded-full border-2' src="/linkedin.svg" layout="fixed" width={40} height={40} alt="LinkedIn" />
             </Link>
             <Link href='https://twitter.com/HappyTreeArts' target='_blank' title='Not much of a tweeter!'>
-              <Image className='transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-teal-400 bg-gray-200 rounded-full border-2' src="/twitter.svg" layout="fixed" width={40} height={40} />
+              <Image className='transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-teal-400 bg-gray-200 rounded-full border-2' src="/twitter.svg" layout="fixed" width={40} height={40} alt="Twitter" />
             </Link>
             <Link href='https://www.instagram.com/happytreearts/' target='_blank' title='Happy little trees :)'>
-              <Image className='transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-teal-400 bg-gray-200 rounded-full border-2' src="/instagram.svg" layout="fixed" width={40} height={40} />
+              <Image className='transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-teal-400 bg-gray-200 rounded-full border-2' src="/instagram.svg" layout="fixed" width={40} height={40} alt="Instagram" />
             </Link>
           </div>
           <Link className='text-sm' href='#' title='E-mail'>
