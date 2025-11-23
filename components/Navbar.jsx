@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { Transition } from '@headlessui/react';
 import { useTheme } from 'next-themes';
+import Logo from './Logo';
 
 const Navbar = () => {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -48,9 +49,10 @@ const Navbar = () => {
         <nav className='fixed w-full h-20 z-50 bg-white/80 dark:bg-space-dark/80 backdrop-blur-md border-b border-gray-200 dark:border-space-light transition-colors duration-300'>
             <div className='w-full h-full'>
                 <div className='flex items-center justify-between h-full px-8 max-w-7xl mx-auto'>
-                    <div className='flex-shrink-0'>
-                        <Link href='/' className='text-2xl font-bold text-teal-600 dark:text-space-neon dark:neon-text transition-colors duration-300'>
-                            Flogert Bardhi
+                    <div className='flex-shrink-0 flex items-center'>
+                        <Link href='/' className='flex items-center gap-2 text-2xl font-bold text-teal-600 dark:text-space-neon dark:neon-text transition-colors duration-300'>
+                            <Logo />
+                            <span className="hidden sm:block">Flogert Bardhi</span>
                         </Link>
                     </div>
                     <div className='hidden md:block'>
