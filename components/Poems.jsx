@@ -79,7 +79,7 @@ const Poems = () => {
         transition={{ duration: 0.5 }}
         className='text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-12 neon-text z-10'
       >
-        Captain's Log: Poetry
+        Captain&apos;s Log: Poetry
       </motion.h2>
 
       <div className="relative w-full max-w-4xl z-10 flex flex-col md:flex-row gap-8 items-center justify-center">
