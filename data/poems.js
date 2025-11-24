@@ -2,20 +2,20 @@ export const poems = [
   {
     title: "Time",
     content: `At times, I remind myself to try and slow down time,
-the thought catches me in front of a window,
-or by the wooden bench at the park,
-or when I see smiles all around.
-It's cause I desire the daily rush to lessen,
-with the joyful tranquility of the gifted present.
-I see trees dancing with the wind,
-I feel the love from warm hugs,
-and I all I can do is take a snapshot,
-truly embracing places and emotions,
-as a beautiful part of humanity.`,
-    date: "11/24/2025",
+            the thought catches me in front of a window,
+            or by the wooden bench at the park,
+            or when I see smiles all around.
+            It's cause I desire the daily rush to lessen,
+            with the joyful tranquility of the gifted present.
+            I see trees dancing with the wind,
+            I feel the love from warm hugs,
+            and I all I can do is take a snapshot,
+            truly embracing places and emotions,
+            as a beautiful part of humanity.`,
+    date: "01/23/2017",
     link: "https://www.blogger.com/blog/post/edit/6327086063759555844/6672391895714283039?hl=en",
-    category: "Cosmic",
-    tags: ["Life", "Philosophy", "Hugs", "Journey", "Time"]
+    category: "Philosophy",
+    tags: ["Time", "Mindfulness", "Nature", "Humanity", "Present"]
   },
   {
     title: "The Void",
@@ -43,41 +43,114 @@ as a beautiful part of humanity.`,
             to be free, for once, to live,
             all the present, every second,
             how to love, how to give.`,
-    date: "11/24/2025",
+    date: "04/02/2018",
     link: "https://www.blogger.com/blog/post/edit/6327086063759555844/1155294023022314942?hl=en",
     category: "Life",
-    tags: ["Life", "Silence", "Sounds", "Philosophy"]
+    tags: ["Eternity", "Silence", "Harmony", "Resilience", "Hope"]
   },
   {
-    title: "Nebula Dreams",
-    content: `Colors swirl and dance,
-In a cosmic ballet grand,
-A fleeting romance,
-Written in the stellar sand.
+    title: "Words",
+    content: ` I can't stop thinking of words,
 
-Pink and purple hues,
-Painting skies of endless night,
-Chasing away blues,
-With their soft and gentle light.`,
-    date: "Stardate 425.9",
-    link: "https://flogertbardhipoems.blogspot.com/",
-    category: "Cosmic",
-    tags: ["Colors", "Love", "Night", "Dreams"]
+            these mysterious things that cross my mind,
+
+            while they quickly dance around,
+
+            faster than a gossip in a small town.
+
+
+
+            There's the always powerful ones,
+
+            as they echo throughout history,
+
+            full of meaning and eternal glory,
+
+            firmly standing for humanity.
+
+
+
+            There's the warm ones,
+
+            said as a greeting or a feeling,
+
+            at a market or under the stars,
+
+            planting smiles and warming hearts.
+
+
+
+            Some others are left behind,
+
+            with no empathy in mind,
+
+            causing tears that start streams,
+
+            tearing starts of pristine dreams.
+
+
+
+            Many more are never spoken,
+
+            perhaps to avoid a heart broken,
+
+            but the true feelings will unfold,
+
+            through a nervous twitch or a smiley face,
+
+            somehow we can't escape, but embrace,
+
+            our genuinely powerful emotions.
+
+            And like the skies with the birds,
+
+            we're connected with words,
+
+            and more.`,
+    date: "5/11/2022",
+    link: "https://www.blogger.com/blog/post/edit/6327086063759555844/4611556952583729635?hl=en",
+    category: "Expression",
+    tags: ["Communication", "Emotions", "Connection", "History", "Power"]
   },
   {
-    title: "Orbit",
-    content: `Round and round we go,
-In a gravity embrace,
-Moving fast and slow,
-Through the vastness of space.
+    title: "My Salmonberry",
+    content: `Brand new journey in the valley,
+            stardew morning calls my name,
+            Shaking gently some salmonberry,
+            as we accomplish through the day.
 
-Tethered by a force,
-Unseen but always there,
-On a steady course,
-With not a single care.`,
-    date: "Stardate 428.3",
-    link: "https://flogertbardhipoems.blogspot.com/",
-    category: "Physics",
-    tags: ["Gravity", "Motion", "Circle", "Force"]
+            Farming firstly, tending crops,
+            petting chickens and the cat,
+            collecting parsnip for the shop,
+            to get some gold for a hat.
+
+            Where's my pal, she still napping,
+            we got a challenge for us ahead,
+            "Fishing is hard" she says abruptly,
+            "Let's go mining instead".
+
+            Following me through the woods,
+            "Take me hand", she says, "it's heavy",
+            Foraging swiftly some nuts and berries,
+            For the mine now we are ready.
+
+            There's no slimes or pesty bugs,
+            or bats and monsters to match our fierce,
+            I say you can gather supplies,
+            while I swing this sword of mine.
+
+            I protect, you collect,
+            eat salmonberries for energy,
+            we leave the mine before sunset,
+            our pockets full of harmony.
+
+            But in real life it's coffee chats,
+            as you joyfully share a story,
+            I see your world full of coziness,
+            It truly is my salmonberry.`,
+    date: "6/15/2025",
+    link: "https://www.blogger.com/blog/post/edit/6327086063759555844/8648540756273851619?hl=en",
+    category: "Gaming",
+    tags: ["Stardew Valley", "Cozy", "Love", "Adventure", "Gaming"]
   }
 ];
