@@ -1,73 +1,7 @@
 import React, { useState, useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
-
-const poems = [
-  {
-    title: "Stardust",
-    content: `We are but stardust,
-Drifting in the endless sea,
-Searching for a shore,
-Where we can finally be free.
-
-The light of distant suns,
-Guides us through the night,
-A beacon of hope,
-Burning ever bright.`,
-    date: "Stardate 420.1",
-    link: "https://flogertbardhipoems.blogspot.com/",
-    category: "Cosmic",
-    tags: ["Stars", "Ocean", "Hope", "Journey"]
-  },
-  {
-    title: "The Void",
-    content: `Silence wraps around,
-Like a heavy velvet cloak,
-No sound to be found,
-Not a word was ever spoke.
-
-In the deep dark black,
-Where the stars refuse to shine,
-There is no turning back,
-From this journey of mine.`,
-    date: "Stardate 422.5",
-    link: "https://flogertbardhipoems.blogspot.com/",
-    category: "Deep Space",
-    tags: ["Silence", "Darkness", "Mystery", "Solitude"]
-  },
-  {
-    title: "Nebula Dreams",
-    content: `Colors swirl and dance,
-In a cosmic ballet grand,
-A fleeting romance,
-Written in the stellar sand.
-
-Pink and purple hues,
-Painting skies of endless night,
-Chasing away blues,
-With their soft and gentle light.`,
-    date: "Stardate 425.9",
-    link: "https://flogertbardhipoems.blogspot.com/",
-    category: "Cosmic",
-    tags: ["Colors", "Love", "Night", "Dreams"]
-  },
-  {
-    title: "Orbit",
-    content: `Round and round we go,
-In a gravity embrace,
-Moving fast and slow,
-Through the vastness of space.
-
-Tethered by a force,
-Unseen but always there,
-On a steady course,
-With not a single care.`,
-    date: "Stardate 428.3",
-    link: "https://flogertbardhipoems.blogspot.com/",
-    category: "Physics",
-    tags: ["Gravity", "Motion", "Circle", "Force"]
-  }
-];
+import { poems } from '../data/poems'
 
 const categories = ["All", ...new Set(poems.map(p => p.category))];
 
