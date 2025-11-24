@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import Link from 'next/link'
 
 const poems = [
   {
@@ -13,7 +14,8 @@ The light of distant suns,
 Guides us through the night,
 A beacon of hope,
 Burning ever bright.`,
-    date: "Stardate 420.1"
+    date: "Stardate 420.1",
+    link: "https://flogertbardhipoems.blogspot.com/"
   },
   {
     title: "The Void",
@@ -26,7 +28,8 @@ In the deep dark black,
 Where the stars refuse to shine,
 There is no turning back,
 From this journey of mine.`,
-    date: "Stardate 422.5"
+    date: "Stardate 422.5",
+    link: "https://flogertbardhipoems.blogspot.com/"
   },
   {
     title: "Nebula Dreams",
@@ -39,7 +42,8 @@ Pink and purple hues,
 Painting skies of endless night,
 Chasing away blues,
 With their soft and gentle light.`,
-    date: "Stardate 425.9"
+    date: "Stardate 425.9",
+    link: "https://flogertbardhipoems.blogspot.com/"
   },
   {
     title: "Orbit",
@@ -52,7 +56,8 @@ Tethered by a force,
 Unseen but always there,
 On a steady course,
 With not a single care.`,
-    date: "Stardate 428.3"
+    date: "Stardate 428.3",
+    link: "https://flogertbardhipoems.blogspot.com/"
   }
 ];
 
@@ -103,10 +108,20 @@ const Poems = () => {
                         <span className="text-sm font-mono text-gray-500 dark:text-space-accent opacity-70">{poems[currentIndex].date}</span>
                     </div>
                     
-                    <div className="flex-1 flex items-center justify-center">
-                        <p className="text-lg md:text-xl font-serif leading-relaxed whitespace-pre-line text-gray-800 dark:text-gray-200 italic text-center">
+                    <div className="flex-1 flex flex-col items-center justify-center">
+                        <p className="text-lg md:text-xl font-serif leading-relaxed whitespace-pre-line text-gray-800 dark:text-gray-200 italic text-center mb-6">
                             {poems[currentIndex].content}
                         </p>
+                        <Link 
+                            href={poems[currentIndex].link} 
+                            target="_blank"
+                            className="inline-flex items-center gap-2 text-sm font-medium text-teal-600 dark:text-space-neon hover:underline transition-all"
+                        >
+                            <span>Read on Blogger</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                            </svg>
+                        </Link>
                     </div>
                 </motion.div>
             </AnimatePresence>
