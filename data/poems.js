@@ -18,7 +18,7 @@ export const poems = [
     tags: ["Time", "Mindfulness", "Nature", "Humanity", "Present"]
   },
   {
-    title: "The Void",
+    title: "Sounds of Life",
     content: `It all leads the same way,
             where the storms are of the past,
             and the time is gonna stay,
@@ -51,61 +51,33 @@ export const poems = [
   {
     title: "Words",
     content: ` I can't stop thinking of words,
-
             these mysterious things that cross my mind,
-
             while they quickly dance around,
-
             faster than a gossip in a small town.
 
-
-
             There's the always powerful ones,
-
             as they echo throughout history,
-
             full of meaning and eternal glory,
-
             firmly standing for humanity.
 
-
-
             There's the warm ones,
-
             said as a greeting or a feeling,
-
             at a market or under the stars,
-
             planting smiles and warming hearts.
 
-
-
             Some others are left behind,
-
             with no empathy in mind,
-
             causing tears that start streams,
-
             tearing starts of pristine dreams.
 
-
-
             Many more are never spoken,
-
             perhaps to avoid a heart broken,
-
             but the true feelings will unfold,
-
             through a nervous twitch or a smiley face,
-
             somehow we can't escape, but embrace,
-
             our genuinely powerful emotions.
-
             And like the skies with the birds,
-
             we're connected with words,
-
             and more.`,
     date: "5/11/2022",
     link: "https://www.blogger.com/blog/post/edit/6327086063759555844/4611556952583729635?hl=en",
