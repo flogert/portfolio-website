@@ -12,23 +12,23 @@ import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import { motion, AnimatePresence } from 'framer-motion'
 
 const paintings = [
-  { src: "/paintings/aloy.jpg", title: "Aloy", category: "Characters" },
-  { src: "/paintings/by-the-bridge.jpg", title: "By the Bridge", category: "Landscape" },
-  { src: "/paintings/cabin.jpg", title: "Cabin", category: "Landscape" },
-  { src: "/paintings/charlie.jpg", title: "Charlie", category: "Portraits" },
-  { src: "/paintings/city-lights.jpg", title: "City Lights", category: "Landscape" },
-  { src: "/paintings/distant-peace.jpg", title: "Distant Peace", category: "Landscape" },
-  { src: "/paintings/geralt.jpg", title: "Geralt", category: "Characters" },
-  { src: "/paintings/hills.jpg", title: "Hills", category: "Landscape" },
-  { src: "/paintings/hogwarts.jpg", title: "Hogwarts", category: "Landscape" },
-  { src: "/paintings/horizon.jpg", title: "Horizon", category: "Landscape" },
-  { src: "/paintings/ionia.jpg", title: "Ionia", category: "Landscape" },
-  { src: "/paintings/red-dead-redemption.jpg", title: "Red Dead Redemption", category: "Characters" },
-  { src: "/paintings/spring.jpg", title: "Spring", category: "Landscape" },
-  { src: "/paintings/sunset.jpeg", title: "Sunset", category: "Landscape" },
-  { src: "/paintings/viego.jpg", title: "Viego", category: "Characters" },
-  { src: "/paintings/warwick.jpg", title: "Warwick", category: "Characters" },
-  { src: "/paintings/windfall-haze.jpg", title: "Windfall Haze", category: "Landscape" },
+  { src: "/paintings/aloy.jpg", title: "Aloy", category: "Characters", tags: ["Horizon Zero Dawn", "Game", "Portrait", "Digital"] },
+  { src: "/paintings/by-the-bridge.jpg", title: "By the Bridge", category: "Landscape", tags: ["Nature", "Water", "Green", "Scenery"] },
+  { src: "/paintings/cabin.jpg", title: "Cabin", category: "Landscape", tags: ["Cozy", "Winter", "Snow", "House"] },
+  { src: "/paintings/charlie.jpg", title: "Charlie", category: "Portraits", tags: ["Dog", "Pet", "Animal", "Cute"] },
+  { src: "/paintings/city-lights.jpg", title: "City Lights", category: "Landscape", tags: ["Urban", "Night", "Lights", "City"] },
+  { src: "/paintings/distant-peace.jpg", title: "Distant Peace", category: "Landscape", tags: ["Mountains", "Calm", "Vista", "Blue"] },
+  { src: "/paintings/geralt.jpg", title: "Geralt", category: "Characters", tags: ["Witcher", "Game", "Fantasy", "Sword"] },
+  { src: "/paintings/hills.jpg", title: "Hills", category: "Landscape", tags: ["Green", "Nature", "Rolling", "Field"] },
+  { src: "/paintings/hogwarts.jpg", title: "Hogwarts", category: "Landscape", tags: ["Fantasy", "Castle", "Harry Potter", "Magic"] },
+  { src: "/paintings/horizon.jpg", title: "Horizon", category: "Landscape", tags: ["Sunset", "Nature", "Sky", "Orange"] },
+  { src: "/paintings/ionia.jpg", title: "Ionia", category: "Landscape", tags: ["Fantasy", "Game", "League of Legends", "Magic"] },
+  { src: "/paintings/red-dead-redemption.jpg", title: "Red Dead Redemption", category: "Characters", tags: ["Game", "Cowboy", "Western", "Arthur"] },
+  { src: "/paintings/spring.jpg", title: "Spring", category: "Landscape", tags: ["Flowers", "Nature", "Bright", "Season"] },
+  { src: "/paintings/sunset.jpeg", title: "Sunset", category: "Landscape", tags: ["Orange", "Sun", "Water", "Dusk"] },
+  { src: "/paintings/viego.jpg", title: "Viego", category: "Characters", tags: ["League of Legends", "Game", "Villain", "Ruined King"] },
+  { src: "/paintings/warwick.jpg", title: "Warwick", category: "Characters", tags: ["League of Legends", "Game", "Monster", "Wolf"] },
+  { src: "/paintings/windfall-haze.jpg", title: "Windfall Haze", category: "Landscape", tags: ["Abstract", "Blue", "Wind", "Art"] },
 ];
 
 const categories = ["All", ...new Set(paintings.map(p => p.category))];
@@ -56,7 +56,9 @@ const Gallery = () => {
   const filteredPaintings = useMemo(() => {
     return paintings.filter(painting => {
       const matchesCategory = selectedCategory === "All" || painting.category === selectedCategory;
-      const matchesSearch = painting.title.toLowerCase().includes(searchQuery.toLowerCase());
+      const searchLower = searchQuery.toLowerCase();
+      const matchesSearch = painting.title.toLowerCase().includes(searchLower) ||
+                            painting.tags.some(tag => tag.toLowerCase().includes(searchLower));
       return matchesCategory && matchesSearch;
     });
   }, [selectedCategory, searchQuery]);
@@ -153,7 +155,12 @@ const Gallery = () => {
               />
               <div className='absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100'>
                 <span className='text-white font-bold text-lg neon-text mb-1'>{painting.title}</span>
-                <span className='text-teal-200 text-xs font-mono bg-black/50 px-2 py-1 rounded'>{painting.category}</span>
+                <span className='text-teal-200 text-xs font-mono bg-black/50 px-2 py-1 rounded mb-2'>{painting.category}</span>
+                <div className='flex flex-wrap justify-center gap-1 px-4'>
+                  {painting.tags.slice(0, 3).map(tag => (
+                    <span key={tag} className='text-[10px] text-gray-300 bg-black/30 px-1.5 py-0.5 rounded-full border border-white/10'>{tag}</span>
+                  ))}
+                </div>
               </div>
             </motion.div>
           ))}

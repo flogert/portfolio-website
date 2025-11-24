@@ -16,7 +16,8 @@ A beacon of hope,
 Burning ever bright.`,
     date: "Stardate 420.1",
     link: "https://flogertbardhipoems.blogspot.com/",
-    category: "Cosmic"
+    category: "Cosmic",
+    tags: ["Stars", "Ocean", "Hope", "Journey"]
   },
   {
     title: "The Void",
@@ -31,7 +32,8 @@ There is no turning back,
 From this journey of mine.`,
     date: "Stardate 422.5",
     link: "https://flogertbardhipoems.blogspot.com/",
-    category: "Deep Space"
+    category: "Deep Space",
+    tags: ["Silence", "Darkness", "Mystery", "Solitude"]
   },
   {
     title: "Nebula Dreams",
@@ -46,7 +48,8 @@ Chasing away blues,
 With their soft and gentle light.`,
     date: "Stardate 425.9",
     link: "https://flogertbardhipoems.blogspot.com/",
-    category: "Cosmic"
+    category: "Cosmic",
+    tags: ["Colors", "Love", "Night", "Dreams"]
   },
   {
     title: "Orbit",
@@ -61,7 +64,8 @@ On a steady course,
 With not a single care.`,
     date: "Stardate 428.3",
     link: "https://flogertbardhipoems.blogspot.com/",
-    category: "Physics"
+    category: "Physics",
+    tags: ["Gravity", "Motion", "Circle", "Force"]
   }
 ];
 
@@ -75,8 +79,10 @@ const Poems = () => {
   const filteredPoems = useMemo(() => {
     return poems.filter(poem => {
       const matchesCategory = selectedCategory === "All" || poem.category === selectedCategory;
-      const matchesSearch = poem.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                          poem.content.toLowerCase().includes(searchQuery.toLowerCase());
+      const searchLower = searchQuery.toLowerCase();
+      const matchesSearch = poem.title.toLowerCase().includes(searchLower) || 
+                          poem.content.toLowerCase().includes(searchLower) ||
+                          poem.tags.some(tag => tag.toLowerCase().includes(searchLower));
       return matchesCategory && matchesSearch;
     });
   }, [selectedCategory, searchQuery]);
@@ -165,11 +171,18 @@ const Poems = () => {
                       className="flex-1 flex flex-col"
                   >
                       <div className="flex justify-between items-baseline mb-6 border-b border-gray-300 dark:border-space-purple/30 pb-4">
+                        <div>
                           <h3 className="text-2xl md:text-3xl font-serif font-bold text-teal-800 dark:text-space-neon">{currentPoem.title}</h3>
-                          <span className="text-sm font-mono text-gray-500 dark:text-space-accent opacity-70">{currentPoem.date}</span>
-                      </div>
-                      
-                      <div className="flex-1 flex flex-col items-center justify-center">
+                          <div className="flex gap-2 mt-2">
+                            {currentPoem.tags.map(tag => (
+                              <span key={tag} className="text-xs font-mono text-teal-600 dark:text-space-accent bg-teal-50 dark:bg-space-dark/50 px-2 py-1 rounded-full border border-teal-100 dark:border-space-purple/30">
+                                #{tag}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                        <span className="text-sm font-mono text-gray-500 dark:text-space-accent opacity-70 whitespace-nowrap ml-4">{currentPoem.date}</span>
+                      </div>                      <div className="flex-1 flex flex-col items-center justify-center">
                           <p className="text-lg md:text-xl font-serif leading-relaxed whitespace-pre-line text-gray-800 dark:text-gray-200 italic text-center mb-6">
                               {currentPoem.content}
                           </p>
