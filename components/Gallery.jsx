@@ -5,14 +5,23 @@ import "yet-another-react-lightbox/styles.css";
 import { motion } from 'framer-motion'
 
 const paintings = [
+  { src: "/paintings/aloy.jpg", title: "Aloy" },
   { src: "/paintings/by-the-bridge.jpg", title: "By the Bridge" },
   { src: "/paintings/cabin.jpg", title: "Cabin" },
-  { src: "/paintings/sunset.jpeg", title: "Sunset" },
-  { src: "/paintings/warwick.jpg", title: "Warwick" },
   { src: "/paintings/charlie.jpg", title: "Charlie" },
-  { src: "/paintings/aloy.jpg", title: "Aloy" },
-  { src: "/paintings/horizon.jpg", title: "Horizon" },
+  { src: "/paintings/city-lights.jpg", title: "City Lights" },
+  { src: "/paintings/distant-peace.jpg", title: "Distant Peace" },
+  { src: "/paintings/geralt.jpg", title: "Geralt" },
+  { src: "/paintings/hills.jpg", title: "Hills" },
   { src: "/paintings/hogwarts.jpg", title: "Hogwarts" },
+  { src: "/paintings/horizon.jpg", title: "Horizon" },
+  { src: "/paintings/ionia.jpg", title: "Ionia" },
+  { src: "/paintings/red-dead-redemption.jpg", title: "Red Dead Redemption" },
+  { src: "/paintings/spring.jpg", title: "Spring" },
+  { src: "/paintings/sunset.jpeg", title: "Sunset" },
+  { src: "/paintings/viego.jpg", title: "Viego" },
+  { src: "/paintings/warwick.jpg", title: "Warwick" },
+  { src: "/paintings/windfall-haze.jpg", title: "Windfall Haze" },
 ];
 
 const container = {
