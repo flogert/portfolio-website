@@ -5,6 +5,20 @@ import { motion } from 'framer-motion'
 
 const projectsData = [
   {
+    title: "Syllable League",
+    description: "An app where you guess League of Legends champions.",
+    image: "/projects/syllable-league.png",
+    link: "https://syllable-league.vercel.app/",
+    tech: ["JavaScript", "HTML", "CSS"]
+  },
+  {
+    title: "TFTdle",
+    description: "Teamfight Tactics guessing games including Augments, Tacticians, and Traits.",
+    image: "/projects/tft-games.png",
+    link: "https://tft-games.vercel.app/",
+    tech: ["Next.js", "Tailwind", "Framer Motion"]
+  },
+  {
     title: "Multi-step Form",
     description: "A multi-step form challenge from Frontend Mentor.",
     image: "/projects/multi-step-form.PNG",

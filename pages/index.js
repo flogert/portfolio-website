@@ -15,7 +15,7 @@ export default function Home() {
         <meta name="description" content="Flogert Bardhi Portfolio Website - Web Developer & Artist" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="w-full min-h-screen bg-space-dark text-white overflow-x-hidden">
+      <main className="w-full min-h-screen bg-gray-50 dark:bg-space-dark text-gray-900 dark:text-white overflow-x-hidden transition-colors duration-300">
         <Navbar />
         <Hero />
         <Projects />

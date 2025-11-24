@@ -75,7 +75,7 @@ const Poems = () => {
   return (
     <div id="poems" className='min-h-screen py-20 px-4 flex flex-col items-center justify-center relative overflow-hidden'>
       {/* Background Elements for Coziness */}
-      <div className="absolute inset-0 bg-gradient-to-b from-space-dark to-space-light opacity-50 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-200 to-white dark:from-space-dark dark:to-space-light opacity-50 pointer-events-none"></div>
       
       <motion.h2 
         initial={{ opacity: 0, y: -20 }}
